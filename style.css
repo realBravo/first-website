@@ -1,0 +1,61 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  
+}
+
+section{
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.model{
+  object-fit: contain;
+  height: 80vh;
+  width:auto;  
+}
+
+#box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width:100%;
+}
+
+model-viewer{
+  width: 100%;
+  height: 800px;
+  position: flex;
+}
+
+#timeline{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#gradient-background {
+  background: linear-gradient(300deg,deepskyblue,#44d400,#0059ff);
+  background-size: 120% 120%;
+  animation: gradient-animation 7s ease infinite;
+  height: 20px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
